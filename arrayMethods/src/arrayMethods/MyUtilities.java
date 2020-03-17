@@ -103,14 +103,14 @@ public class MyUtilities {
 	/*
 	 Magic square rules: 1) The very first number will always be inserted in the top row middle column
 	 
-	  					 2) The next number will be inserted in the row and column below the previous  
-	  					 (if previous number is inserted on row 2 column 1, next number will be inserted on row 1 column 0)
+	  		     2) The next number will be inserted in the row and column below the previous  
+	  		     (if previous number is inserted on row 2 column 1, next number will be inserted on row 1 column 0)
 	  					 
-	  					 3) If the magic square's size is a factor of the current number, ignore rule number 2 and add 1 to the row instead
-	  					 (if the size of the magic square is 3x3 and the number 3 is located on row 2 column 1, number 4 will be located on row 3 column 1)
+	  		     3) If the magic square's size is a factor of the current number, ignore rule number 2 and add 1 to the row instead
+	  		     (if the size of the magic square is 3x3 and the number 3 is located on row 2 column 1, number 4 will be located on row 3 column 1)
 	  					 
-	  					 4) If at any point either row or column is equal to -1, add the size of the magic square to the value
-	  					 (if the number 5 is located on row 0 column 1, the number 6 will be located on row 2 column 0)
+	  	   	     4) If at any point either row or column is equal to -1, add the size of the magic square to the value
+	  		     (if the number 5 is located on row 0 column 1, the number 6 will be located on row 2 column 0)
 	 */
 	public void oddMagic(int n) {
 		int square[][] = new int[n][n];	// The 2D array
